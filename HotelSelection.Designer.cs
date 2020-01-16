@@ -45,9 +45,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(474, 9);
+            this.label1.Location = new System.Drawing.Point(356, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 34);
+            this.label1.Size = new System.Drawing.Size(178, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "Hotel Selection";
             // 
@@ -55,9 +56,10 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(173, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(130, 81);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(847, 673);
+            this.pictureBox1.Size = new System.Drawing.Size(718, 558);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -66,9 +68,10 @@
             // 
             this.queens_hotel.BackColor = System.Drawing.Color.Crimson;
             this.queens_hotel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.queens_hotel.Location = new System.Drawing.Point(297, 205);
+            this.queens_hotel.Location = new System.Drawing.Point(214, 161);
+            this.queens_hotel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.queens_hotel.Name = "queens_hotel";
-            this.queens_hotel.Size = new System.Drawing.Size(25, 25);
+            this.queens_hotel.Size = new System.Drawing.Size(19, 20);
             this.queens_hotel.TabIndex = 4;
             this.queens_hotel.UseVisualStyleBackColor = false;
             this.queens_hotel.Click += new System.EventHandler(this.queens_hotel_Click);
@@ -77,9 +80,10 @@
             // 
             this.grand_pacific_button.BackColor = System.Drawing.Color.Crimson;
             this.grand_pacific_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grand_pacific_button.Location = new System.Drawing.Point(391, 245);
+            this.grand_pacific_button.Location = new System.Drawing.Point(293, 199);
+            this.grand_pacific_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grand_pacific_button.Name = "grand_pacific_button";
-            this.grand_pacific_button.Size = new System.Drawing.Size(25, 25);
+            this.grand_pacific_button.Size = new System.Drawing.Size(19, 20);
             this.grand_pacific_button.TabIndex = 5;
             this.grand_pacific_button.UseVisualStyleBackColor = false;
             this.grand_pacific_button.Click += new System.EventHandler(this.grand_pacific_button_Click);
@@ -88,9 +92,10 @@
             // 
             this.charlton.BackColor = System.Drawing.Color.Crimson;
             this.charlton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.charlton.Location = new System.Drawing.Point(391, 421);
+            this.charlton.Location = new System.Drawing.Point(304, 337);
+            this.charlton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.charlton.Name = "charlton";
-            this.charlton.Size = new System.Drawing.Size(25, 25);
+            this.charlton.Size = new System.Drawing.Size(19, 20);
             this.charlton.TabIndex = 6;
             this.charlton.UseVisualStyleBackColor = false;
             this.charlton.Click += new System.EventHandler(this.charlton_Click);
@@ -99,9 +104,10 @@
             // 
             this.intercontinental_button.BackColor = System.Drawing.Color.Crimson;
             this.intercontinental_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.intercontinental_button.Location = new System.Drawing.Point(555, 174);
+            this.intercontinental_button.Location = new System.Drawing.Point(440, 141);
+            this.intercontinental_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.intercontinental_button.Name = "intercontinental_button";
-            this.intercontinental_button.Size = new System.Drawing.Size(25, 25);
+            this.intercontinental_button.Size = new System.Drawing.Size(19, 20);
             this.intercontinental_button.TabIndex = 7;
             this.intercontinental_button.UseVisualStyleBackColor = false;
             this.intercontinental_button.Click += new System.EventHandler(this.intercontinental_button_Click);
@@ -110,9 +116,10 @@
             // 
             this.pan_pacific.BackColor = System.Drawing.Color.Crimson;
             this.pan_pacific.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pan_pacific.Location = new System.Drawing.Point(771, 569);
+            this.pan_pacific.Location = new System.Drawing.Point(566, 483);
+            this.pan_pacific.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pan_pacific.Name = "pan_pacific";
-            this.pan_pacific.Size = new System.Drawing.Size(25, 25);
+            this.pan_pacific.Size = new System.Drawing.Size(19, 20);
             this.pan_pacific.TabIndex = 8;
             this.pan_pacific.UseVisualStyleBackColor = false;
             this.pan_pacific.Click += new System.EventHandler(this.pan_pacific_Click);
@@ -121,18 +128,20 @@
             // 
             this.ritz_button.BackColor = System.Drawing.Color.Crimson;
             this.ritz_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ritz_button.Location = new System.Drawing.Point(944, 685);
+            this.ritz_button.Location = new System.Drawing.Point(732, 551);
+            this.ritz_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ritz_button.Name = "ritz_button";
-            this.ritz_button.Size = new System.Drawing.Size(25, 25);
+            this.ritz_button.Size = new System.Drawing.Size(19, 20);
             this.ritz_button.TabIndex = 9;
             this.ritz_button.UseVisualStyleBackColor = false;
             this.ritz_button.Click += new System.EventHandler(this.ritz_button_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 19);
+            this.button1.Location = new System.Drawing.Point(21, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 63);
+            this.button1.Size = new System.Drawing.Size(77, 51);
             this.button1.TabIndex = 10;
             this.button1.Text = "BACK";
             this.button1.UseVisualStyleBackColor = true;
@@ -140,9 +149,9 @@
             // 
             // HotelSelection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 853);
+            this.ClientSize = new System.Drawing.Size(946, 693);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ritz_button);
             this.Controls.Add(this.pan_pacific);
@@ -152,6 +161,7 @@
             this.Controls.Add(this.queens_hotel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HotelSelection";
             this.Text = "Hotel Selection";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
