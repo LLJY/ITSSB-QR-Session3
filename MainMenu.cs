@@ -42,6 +42,13 @@ namespace Session3
                 form.Closed += (s, args) => this.Close();
                 form.Show();
             }
+            else
+            {
+                this.Hide();
+                var form = new ArrivalSummary(loggedIn);
+                form.Closed += (s, args) => this.Close();
+                form.Show();
+            }
         }
 
         private void hotel_button_Click(object sender, EventArgs e)
@@ -50,6 +57,13 @@ namespace Session3
             {
                 this.Hide();
                 var form = new HotelSelection(loggedIn);
+                form.Closed += (s, args) => this.Close();
+                form.Show();
+            }
+            else
+            {
+                this.Hide();
+                var form = new HotelSummary(loggedIn);
                 form.Closed += (s, args) => this.Close();
                 form.Show();
             }
@@ -64,6 +78,21 @@ namespace Session3
                 form.Closed += (s, args) => this.Close();
                 form.Show();
             }
+            else
+            {
+                this.Hide();
+                var form = new GuestSummary(loggedIn);
+                form.Closed += (s, args) => this.Close();
+                form.Show();
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new LoginForm();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
         }
     }
 }

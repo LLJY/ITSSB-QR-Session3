@@ -60,6 +60,7 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(718, 558);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -68,7 +69,7 @@
             // 
             this.queens_hotel.BackColor = System.Drawing.Color.Crimson;
             this.queens_hotel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.queens_hotel.Location = new System.Drawing.Point(214, 161);
+            this.queens_hotel.Location = new System.Drawing.Point(199, 141);
             this.queens_hotel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.queens_hotel.Name = "queens_hotel";
             this.queens_hotel.Size = new System.Drawing.Size(19, 20);
@@ -80,7 +81,7 @@
             // 
             this.grand_pacific_button.BackColor = System.Drawing.Color.Crimson;
             this.grand_pacific_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grand_pacific_button.Location = new System.Drawing.Point(293, 199);
+            this.grand_pacific_button.Location = new System.Drawing.Point(269, 177);
             this.grand_pacific_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grand_pacific_button.Name = "grand_pacific_button";
             this.grand_pacific_button.Size = new System.Drawing.Size(19, 20);
@@ -92,7 +93,7 @@
             // 
             this.charlton.BackColor = System.Drawing.Color.Crimson;
             this.charlton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.charlton.Location = new System.Drawing.Point(304, 337);
+            this.charlton.Location = new System.Drawing.Point(269, 292);
             this.charlton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.charlton.Name = "charlton";
             this.charlton.Size = new System.Drawing.Size(19, 20);
@@ -104,7 +105,7 @@
             // 
             this.intercontinental_button.BackColor = System.Drawing.Color.Crimson;
             this.intercontinental_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.intercontinental_button.Location = new System.Drawing.Point(440, 141);
+            this.intercontinental_button.Location = new System.Drawing.Point(392, 128);
             this.intercontinental_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.intercontinental_button.Name = "intercontinental_button";
             this.intercontinental_button.Size = new System.Drawing.Size(19, 20);
@@ -116,7 +117,7 @@
             // 
             this.pan_pacific.BackColor = System.Drawing.Color.Crimson;
             this.pan_pacific.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pan_pacific.Location = new System.Drawing.Point(566, 483);
+            this.pan_pacific.Location = new System.Drawing.Point(638, 471);
             this.pan_pacific.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pan_pacific.Name = "pan_pacific";
             this.pan_pacific.Size = new System.Drawing.Size(19, 20);
@@ -128,7 +129,7 @@
             // 
             this.ritz_button.BackColor = System.Drawing.Color.Crimson;
             this.ritz_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ritz_button.Location = new System.Drawing.Point(732, 551);
+            this.ritz_button.Location = new System.Drawing.Point(739, 564);
             this.ritz_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ritz_button.Name = "ritz_button";
             this.ritz_button.Size = new System.Drawing.Size(19, 20);
