@@ -49,7 +49,7 @@ namespace Session3
                     hotel_label.Text = hotelname;
                     people_number.Text = arrival.numberDelegate.ToString();
                     competitors_number.Text = arrival.numberCompetitors.ToString();
-                    dgvlist = await getInfo(arrival.numberCompetitors + arrival.numberDelegate);
+                    dgvlist = await getInfo(arrival.numberCompetitors, arrival.numberDelegate);
                     Totalpeople = arrival.numberCompetitors + arrival.numberDelegate;
                     dataGridView1.DataSource = dgvlist;
                     updateValuelabel();
@@ -66,20 +66,21 @@ namespace Session3
         {
             valuelabel.Text = (int.Parse(dataGridView1.Rows[0].Cells[4].Value.ToString()) + int.Parse(dataGridView1.Rows[1].Cells[4].Value.ToString())).ToString();
         }
-        public async Task<List<BookingTable>> getInfo(int totalpeople)
+        public async Task<List<BookingTable>> getInfo(int comp, int delegates)
         {
             var returnlist = new List<BookingTable>();
             using (var db = new Session3Entities())
             {
                 int singlerooms = 0;
                 int doublerooms = 0;
-                int i = totalpeople;
+                int i = comp;
                 while ((i-2) >= 1)
                 {
                     i = i - 2;
                     doublerooms++;
                 }
                 singlerooms = i;
+                singlerooms += delegates;
                 var hotel = (from d in db.Hotels
                              where d.hotelId == hotelID
                              select d).First();
