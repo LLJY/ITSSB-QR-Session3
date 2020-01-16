@@ -17,14 +17,18 @@ namespace Session3
         List<int> jul23blacklist;
         public ConfirmArrival(User user)
         {
-            jul22blacklist = new List<int>();
-            jul22blacklist.Add(1);
-            jul22blacklist.Add(4);
-            jul22blacklist.Add(5);
-            jul23blacklist = new List<int>();
-            jul23blacklist.Add(0);
-            jul23blacklist.Add(3);
-            jul23blacklist.Add(7);
+            jul22blacklist = new List<int>
+            {
+                1,
+                4,
+                5
+            };
+            jul23blacklist = new List<int>
+            {
+                0,
+                3,
+                7
+            };
             LoggedIn = user;
             InitializeComponent();
             jul22.Checked = true;
