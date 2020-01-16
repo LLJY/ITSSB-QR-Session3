@@ -57,7 +57,13 @@ namespace Session3
 
         private void booking_or_guests_Click(object sender, EventArgs e)
         {
-
+            if (loggedIn.userTypeIdFK == 2)
+            {
+                this.Hide();
+                var form = new HotelUpdate(loggedIn);
+                form.Closed += (s, args) => this.Close();
+                form.Show();
+            }
         }
     }
 }

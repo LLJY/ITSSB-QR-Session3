@@ -40,16 +40,18 @@
             this.menu_label.Dock = System.Windows.Forms.DockStyle.Top;
             this.menu_label.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu_label.Location = new System.Drawing.Point(0, 0);
+            this.menu_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.menu_label.Name = "menu_label";
-            this.menu_label.Size = new System.Drawing.Size(170, 34);
+            this.menu_label.Size = new System.Drawing.Size(132, 26);
             this.menu_label.TabIndex = 2;
             this.menu_label.Text = "Main Menu";
             // 
             // arrival_button
             // 
-            this.arrival_button.Location = new System.Drawing.Point(235, 72);
+            this.arrival_button.Location = new System.Drawing.Point(176, 58);
+            this.arrival_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.arrival_button.Name = "arrival_button";
-            this.arrival_button.Size = new System.Drawing.Size(313, 84);
+            this.arrival_button.Size = new System.Drawing.Size(235, 68);
             this.arrival_button.TabIndex = 11;
             this.arrival_button.Text = "Create Account";
             this.arrival_button.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // 
             // hotel_button
             // 
-            this.hotel_button.Location = new System.Drawing.Point(235, 162);
+            this.hotel_button.Location = new System.Drawing.Point(176, 132);
+            this.hotel_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hotel_button.Name = "hotel_button";
-            this.hotel_button.Size = new System.Drawing.Size(313, 84);
+            this.hotel_button.Size = new System.Drawing.Size(235, 68);
             this.hotel_button.TabIndex = 12;
             this.hotel_button.Text = "Create Account";
             this.hotel_button.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // 
             // booking_or_guests
             // 
-            this.booking_or_guests.Location = new System.Drawing.Point(235, 252);
+            this.booking_or_guests.Location = new System.Drawing.Point(176, 205);
+            this.booking_or_guests.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.booking_or_guests.Name = "booking_or_guests";
-            this.booking_or_guests.Size = new System.Drawing.Size(313, 84);
+            this.booking_or_guests.Size = new System.Drawing.Size(235, 68);
             this.booking_or_guests.TabIndex = 13;
             this.booking_or_guests.Text = "Create Account";
             this.booking_or_guests.UseVisualStyleBackColor = true;
@@ -77,13 +81,14 @@
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.booking_or_guests);
             this.Controls.Add(this.hotel_button);
             this.Controls.Add(this.arrival_button);
             this.Controls.Add(this.menu_label);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainMenu";
             this.Text = "Main Menu";
             this.ResumeLayout(false);
