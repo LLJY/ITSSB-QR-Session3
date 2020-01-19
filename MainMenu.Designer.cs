@@ -50,7 +50,7 @@
             // arrival_button
             // 
             this.arrival_button.Location = new System.Drawing.Point(176, 58);
-            this.arrival_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.arrival_button.Margin = new System.Windows.Forms.Padding(2);
             this.arrival_button.Name = "arrival_button";
             this.arrival_button.Size = new System.Drawing.Size(235, 68);
             this.arrival_button.TabIndex = 11;
@@ -61,7 +61,7 @@
             // hotel_button
             // 
             this.hotel_button.Location = new System.Drawing.Point(176, 132);
-            this.hotel_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hotel_button.Margin = new System.Windows.Forms.Padding(2);
             this.hotel_button.Name = "hotel_button";
             this.hotel_button.Size = new System.Drawing.Size(235, 68);
             this.hotel_button.TabIndex = 12;
@@ -72,7 +72,7 @@
             // booking_or_guests
             // 
             this.booking_or_guests.Location = new System.Drawing.Point(176, 205);
-            this.booking_or_guests.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.booking_or_guests.Margin = new System.Windows.Forms.Padding(2);
             this.booking_or_guests.Name = "booking_or_guests";
             this.booking_or_guests.Size = new System.Drawing.Size(235, 68);
             this.booking_or_guests.TabIndex = 13;
@@ -101,7 +101,7 @@
             this.Controls.Add(this.hotel_button);
             this.Controls.Add(this.arrival_button);
             this.Controls.Add(this.menu_label);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.Text = "Main Menu";
             this.ResumeLayout(false);
