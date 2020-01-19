@@ -33,23 +33,28 @@
             this.hotel_button = new System.Windows.Forms.Button();
             this.booking_or_guests = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.back_button = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu_label
             // 
             this.menu_label.AutoSize = true;
-            this.menu_label.Dock = System.Windows.Forms.DockStyle.Top;
             this.menu_label.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu_label.Location = new System.Drawing.Point(0, 0);
+            this.menu_label.Location = new System.Drawing.Point(297, 49);
             this.menu_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.menu_label.Name = "menu_label";
             this.menu_label.Size = new System.Drawing.Size(132, 26);
             this.menu_label.TabIndex = 2;
             this.menu_label.Text = "Main Menu";
+            this.menu_label.Click += new System.EventHandler(this.Menu_label_Click);
             // 
             // arrival_button
             // 
-            this.arrival_button.Location = new System.Drawing.Point(176, 58);
+            this.arrival_button.Location = new System.Drawing.Point(237, 131);
             this.arrival_button.Margin = new System.Windows.Forms.Padding(2);
             this.arrival_button.Name = "arrival_button";
             this.arrival_button.Size = new System.Drawing.Size(235, 68);
@@ -60,7 +65,7 @@
             // 
             // hotel_button
             // 
-            this.hotel_button.Location = new System.Drawing.Point(176, 132);
+            this.hotel_button.Location = new System.Drawing.Point(237, 205);
             this.hotel_button.Margin = new System.Windows.Forms.Padding(2);
             this.hotel_button.Name = "hotel_button";
             this.hotel_button.Size = new System.Drawing.Size(235, 68);
@@ -71,7 +76,7 @@
             // 
             // booking_or_guests
             // 
-            this.booking_or_guests.Location = new System.Drawing.Point(176, 205);
+            this.booking_or_guests.Location = new System.Drawing.Point(237, 278);
             this.booking_or_guests.Margin = new System.Windows.Forms.Padding(2);
             this.booking_or_guests.Name = "booking_or_guests";
             this.booking_or_guests.Size = new System.Drawing.Size(235, 68);
@@ -91,11 +96,53 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Location = new System.Drawing.Point(-7, 409);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(780, 48);
+            this.panel2.TabIndex = 23;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.back_button);
+            this.panel1.Location = new System.Drawing.Point(5, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(729, 45);
+            this.panel1.TabIndex = 24;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(511, 7);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(216, 26);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "ASEAN Skills 2020";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
+            // 
+            // back_button
+            // 
+            this.back_button.Location = new System.Drawing.Point(12, 10);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(75, 23);
+            this.back_button.TabIndex = 0;
+            this.back_button.Text = "BACK";
+            this.back_button.UseVisualStyleBackColor = true;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(737, 457);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.booking_or_guests);
             this.Controls.Add(this.hotel_button);
@@ -104,6 +151,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.Text = "Main Menu";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +165,9 @@
         private System.Windows.Forms.Button hotel_button;
         private System.Windows.Forms.Button booking_or_guests;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button back_button;
     }
 }

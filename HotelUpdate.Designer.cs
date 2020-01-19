@@ -43,6 +43,7 @@
             this.delegates_updown = new System.Windows.Forms.NumericUpDown();
             this.head_updown = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitors_updown)).BeginInit();
@@ -53,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.back_button);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
@@ -216,6 +218,18 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Head of Delegation";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(581, 10);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(216, 26);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "ASEAN Skills 2020";
+            // 
             // HotelUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,6 +252,7 @@
             this.Name = "HotelUpdate";
             this.Text = "HotelUpdate";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitors_updown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delegates_updown)).EndInit();
@@ -264,5 +279,6 @@
         private System.Windows.Forms.NumericUpDown delegates_updown;
         private System.Windows.Forms.NumericUpDown head_updown;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

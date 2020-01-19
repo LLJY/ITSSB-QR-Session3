@@ -94,5 +94,15 @@ namespace Session3
             form.Closed += (s, args) => this.Close();
             form.Show();
         }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,6 +35,8 @@
             this.july22_dgv = new System.Windows.Forms.DataGridView();
             this.july23_dgv = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.july22_dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.july23_dgv)).BeginInit();
@@ -53,7 +55,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.back_button);
             this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Name = "panel1";
@@ -108,11 +111,32 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "23 July 2020";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(581, 7);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(216, 26);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "ASEAN Skills 2020";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Location = new System.Drawing.Point(3, 398);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(795, 48);
+            this.panel2.TabIndex = 22;
+            // 
             // ArrivalSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.july23_dgv);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.july22_dgv);
@@ -122,6 +146,7 @@
             this.Name = "ArrivalSummary";
             this.Text = "ArrivalSummary";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.july22_dgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.july23_dgv)).EndInit();
             this.ResumeLayout(false);
@@ -138,5 +163,7 @@
         private System.Windows.Forms.DataGridView july22_dgv;
         private System.Windows.Forms.DataGridView july23_dgv;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel2;
     }
 }
