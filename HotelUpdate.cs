@@ -147,37 +147,58 @@ namespace Session3
         {
             using (var db = new Session3Entities())
             {
-                var arrivals = (from a in db.Arrivals
-                                where a.userIdFK == LoggedIn.userId
-                                select a).First();
-                var booking = (from b in db.Hotel_Booking
-                               where b.userIdFK == LoggedIn.userId
-                               select b).First();
-                arrivals.numberCars = (int)delegates_updown.Value;
-                int numSmallBus = 0;
-                int numBigBus = 0;
-                decimal numPeople = delegates_updown.Value + competitors_updown.Value;
-                if (numPeople > 38)
+                if (!(dgvlist[0].NewNoOfRoomsRequired > dgvlist[0].AvailableNoOfRooms))
                 {
-                    decimal bigbusraw = numPeople / 42;
-                    numBigBus = (int)Math.Floor(bigbusraw);
-                    numPeople -= (numBigBus * 42);
-                    decimal smallbusraw = numPeople / 19;
-                    numSmallBus = (int)Math.Ceiling(smallbusraw);
+                    if (!(dgvlist[1].NewNoOfRoomsRequired > dgvlist[1].AvailableNoOfRooms))
+                    {
+                        if (((dgvlist[1].NewNoOfRoomsRequired * 2) + dgvlist[0].NewNoOfRoomsRequired) >= delegates_updown.Value + competitors_updown.Value)
+                        {
+                            var arrivals = (from a in db.Arrivals
+                                            where a.userIdFK == LoggedIn.userId
+                                            select a).First();
+                            var booking = (from b in db.Hotel_Booking
+                                           where b.userIdFK == LoggedIn.userId
+                                           select b).First();
+                            arrivals.numberCars = (int)delegates_updown.Value;
+                            int numSmallBus = 0;
+                            int numBigBus = 0;
+                            decimal numPeople = delegates_updown.Value + competitors_updown.Value;
+                            if (numPeople > 38)
+                            {
+                                decimal bigbusraw = numPeople / 42;
+                                numBigBus = (int)Math.Floor(bigbusraw);
+                                numPeople -= (numBigBus * 42);
+                                decimal smallbusraw = numPeople / 19;
+                                numSmallBus = (int)Math.Ceiling(smallbusraw);
+                            }
+                            else
+                            {
+                                //if below 38, only calculate number of 19 seaters
+                                numSmallBus = (int)Math.Ceiling(numPeople / 19);
+                            }
+                            arrivals.number42seat = numBigBus;
+                            arrivals.number19seat = numSmallBus;
+                            arrivals.numberCompetitors = (int)competitors_updown.Value;
+                            arrivals.numberHead = (int)head_updown.Value;
+                            arrivals.numberDelegate = (int)delegates_updown.Value;
+                            booking.numDoubleRoomsRequired = dgvlist[1].NewNoOfRoomsRequired;
+                            booking.numSingleRoomsRequired = dgvlist[0].NewNoOfRoomsRequired;
+                            db.SaveChanges();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Not Enough Rooms for arrivals");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error, more rooms requested than available");
+                    }
                 }
                 else
                 {
-                    //if below 38, only calculate number of 19 seaters
-                    numSmallBus = (int)Math.Ceiling(numPeople / 19);
+                    MessageBox.Show("Error, more rooms requested than available");
                 }
-                arrivals.number42seat = numBigBus;
-                arrivals.number19seat = numSmallBus;
-                arrivals.numberCompetitors = (int)competitors_updown.Value;
-                arrivals.numberHead = (int)head_updown.Value;
-                arrivals.numberDelegate = (int)delegates_updown.Value;
-                booking.numDoubleRoomsRequired = dgvlist[1].NewNoOfRoomsRequired;
-                booking.numSingleRoomsRequired = dgvlist[0].NewNoOfRoomsRequired;
-                db.SaveChanges();
             }
         }
 

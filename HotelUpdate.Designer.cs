@@ -65,7 +65,7 @@
             this.back_button.Name = "back_button";
             this.back_button.Size = new System.Drawing.Size(75, 23);
             this.back_button.TabIndex = 0;
-            this.back_button.Text = "button1";
+            this.back_button.Text = "BACK";
             this.back_button.UseVisualStyleBackColor = true;
             this.back_button.Click += new System.EventHandler(this.Back_button_Click);
             // 
