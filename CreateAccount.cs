@@ -16,6 +16,7 @@ namespace Session3
         public CreateAccount()
         {
             Initialize();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
         }
         public async void Initialize()
         {

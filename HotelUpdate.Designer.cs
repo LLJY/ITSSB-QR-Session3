@@ -44,7 +44,9 @@
             this.head_updown = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.date_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitors_updown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delegates_updown)).BeginInit();
@@ -74,6 +76,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.Controls.Add(this.date_label);
             this.panel2.Location = new System.Drawing.Point(0, 408);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(799, 45);
@@ -230,6 +233,17 @@
             this.label5.TabIndex = 30;
             this.label5.Text = "ASEAN Skills 2020";
             // 
+            // date_label
+            // 
+            this.date_label.AutoSize = true;
+            this.date_label.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_label.ForeColor = System.Drawing.Color.White;
+            this.date_label.Location = new System.Drawing.Point(627, 17);
+            this.date_label.Name = "date_label";
+            this.date_label.Size = new System.Drawing.Size(46, 16);
+            this.date_label.TabIndex = 1;
+            this.date_label.Text = "label3";
+            // 
             // HotelUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,6 +267,8 @@
             this.Text = "HotelUpdate";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitors_updown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delegates_updown)).EndInit();
@@ -280,5 +296,6 @@
         private System.Windows.Forms.NumericUpDown head_updown;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label date_label;
     }
 }

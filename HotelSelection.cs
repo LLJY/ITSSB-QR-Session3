@@ -17,6 +17,7 @@ namespace Session3
         {
             LoggedIn = user;
             InitializeComponent();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -68,6 +69,11 @@ namespace Session3
             var form = new MainMenu(LoggedIn);
             form.Closed += (s, args) => this.Close();
             form.Show();
+        }
+
+        private void HotelSelection_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

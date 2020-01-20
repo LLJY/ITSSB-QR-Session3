@@ -37,6 +37,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.back_button = new System.Windows.Forms.Button();
+            this.date_label = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +101,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Controls.Add(this.date_label);
             this.panel2.Location = new System.Drawing.Point(-7, 409);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(780, 48);
@@ -136,6 +139,17 @@
             this.back_button.Text = "BACK";
             this.back_button.UseVisualStyleBackColor = true;
             // 
+            // date_label
+            // 
+            this.date_label.AutoSize = true;
+            this.date_label.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_label.ForeColor = System.Drawing.Color.White;
+            this.date_label.Location = new System.Drawing.Point(542, 11);
+            this.date_label.Name = "date_label";
+            this.date_label.Size = new System.Drawing.Size(46, 16);
+            this.date_label.TabIndex = 25;
+            this.date_label.Text = "label3";
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,6 +165,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.Text = "Main Menu";
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -169,5 +185,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.Label date_label;
     }
 }

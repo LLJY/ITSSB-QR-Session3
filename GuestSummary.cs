@@ -17,6 +17,7 @@ namespace Session3
         {
             LoggedIn = user;
             InitializeComponent();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
             guests_combo.Items.Add("All");
             guests_combo.Items.Add("Delegates");
             guests_combo.Items.Add("Competitors");

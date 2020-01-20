@@ -17,7 +17,8 @@ namespace Session3
         {
             loggedIn = user;
             InitializeComponent();
-            if(user.userTypeIdFK == 1)
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
+            if (user.userTypeIdFK == 1)
             {
                 menu_label.Text = "Administrator Main Menu";
                 arrival_button.Text = "Arrival Summary";

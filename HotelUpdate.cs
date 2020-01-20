@@ -18,6 +18,7 @@ namespace Session3
         {
             LoggedIn = user;
             InitializeComponent();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
             using (var db = new Session3Entities())
             {
                 try

@@ -31,6 +31,7 @@ namespace Session3
                 7
             };
             InitializeComponent();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
             InitializeDGV();
             GetData();
         }

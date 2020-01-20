@@ -27,6 +27,7 @@ namespace Session3
         public async void Initialize()
         {
             InitializeComponent();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
             using (var db = new Session3Entities())
             {
                 try

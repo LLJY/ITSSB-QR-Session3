@@ -15,6 +15,7 @@ namespace Session3
         public LoginForm()
         {
             InitializeComponent();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
         }
 
         private void login_button_Click(object sender, EventArgs e)

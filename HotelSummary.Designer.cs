@@ -42,9 +42,12 @@
             this.intercontinental_button = new System.Windows.Forms.Button();
             this.grand_pacific_button = new System.Windows.Forms.Button();
             this.queens_hotel_button = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.date_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -189,11 +192,32 @@
             this.queens_hotel_button.UseVisualStyleBackColor = false;
             this.queens_hotel_button.Click += new System.EventHandler(this.Queens_hotel_button_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Controls.Add(this.date_label);
+            this.panel2.Location = new System.Drawing.Point(2, 403);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(795, 48);
+            this.panel2.TabIndex = 30;
+            // 
+            // date_label
+            // 
+            this.date_label.AutoSize = true;
+            this.date_label.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_label.ForeColor = System.Drawing.Color.White;
+            this.date_label.Location = new System.Drawing.Point(632, 22);
+            this.date_label.Name = "date_label";
+            this.date_label.Size = new System.Drawing.Size(46, 16);
+            this.date_label.TabIndex = 31;
+            this.date_label.Text = "label3";
+            // 
             // HotelSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.queens_hotel_button);
             this.Controls.Add(this.grand_pacific_button);
             this.Controls.Add(this.intercontinental_button);
@@ -211,6 +235,8 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,5 +257,7 @@
         private System.Windows.Forms.Button intercontinental_button;
         private System.Windows.Forms.Button grand_pacific_button;
         private System.Windows.Forms.Button queens_hotel_button;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label date_label;
     }
 }

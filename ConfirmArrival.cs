@@ -31,6 +31,7 @@ namespace Session3
             };
             LoggedIn = user;
             InitializeComponent();
+            date_label.Text = DateTime.Now.ToString("dd'/'MM'/'yy");
             jul22.Checked = true;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 

@@ -37,9 +37,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.date_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.july22_dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.july23_dgv)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -126,10 +128,22 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Controls.Add(this.date_label);
             this.panel2.Location = new System.Drawing.Point(3, 398);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(795, 48);
             this.panel2.TabIndex = 22;
+            // 
+            // date_label
+            // 
+            this.date_label.AutoSize = true;
+            this.date_label.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_label.ForeColor = System.Drawing.Color.White;
+            this.date_label.Location = new System.Drawing.Point(581, 15);
+            this.date_label.Name = "date_label";
+            this.date_label.Size = new System.Drawing.Size(46, 16);
+            this.date_label.TabIndex = 31;
+            this.date_label.Text = "label3";
             // 
             // ArrivalSummary
             // 
@@ -149,6 +163,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.july22_dgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.july23_dgv)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,5 +181,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label date_label;
     }
 }
